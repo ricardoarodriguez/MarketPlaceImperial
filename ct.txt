@@ -1,0 +1,10 @@
+  const client = contentful.createClient({
+    space: "abjgbnazssta",
+    environment: "master", // defaults to 'master' if not set
+    accessToken: "riD2d8BSmYv6QcsdNZ-GvzoDfRMZCLPiNazLrvL1SZI",
+  });
+
+  client
+    .getEntry("4DDQBXZY4peSpySw30VSFo")
+    .then((entry) => console.log(entry))
+    .catch(console.error);
