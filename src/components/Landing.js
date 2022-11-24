@@ -7,7 +7,8 @@ const Landing = () => {
   const getLanding = useCallback(async () => {
     try {
       var response = Contentfull();
-      await response.getEntry(process.env.REACT_APP_GETENTRY).then((entry) => {
+      //process.env.REACT_APP_GETENTRY
+      await response.getEntry("4DDQBXZY4peSpySw30VSFo").then((entry) => {
         cleanData(entry.fields);
       });
       //console.log(response);
